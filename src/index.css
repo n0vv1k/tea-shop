@@ -1,0 +1,40 @@
+:root {
+  --bg-primary: #0a0a0a;
+  --text-primary: #f5f5f5;
+  --accent-color: #4ade80;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.05);
+
+  /* Fluid Typography */
+  --font-sm: clamp(0.875rem, 0.8vw + 0.5rem, 1rem);
+  --font-base: clamp(1rem, 1vw + 0.75rem, 1.125rem);
+  --font-lg: clamp(1.25rem, 2vw + 1rem, 1.5rem);
+  --font-h1: clamp(2.5rem, 5vw + 1.5rem, 4.5rem);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+input:focus {
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.1);
+}
