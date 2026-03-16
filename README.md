@@ -35,7 +35,7 @@
 
 1.  **Клонирование:**
     ```bash
-    git clone [https://github.com/ваш-аккаунт/tea-project.git](https://github.com/ваш-аккаунт/tea-project.git)
+    git clone [https://n0vv1k.github.io/tea-shop/](https://n0vv1k.github.io/tea-shop/)
     cd tea-project
     ```
 2.  **Установка зависимостей:**
